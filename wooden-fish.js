@@ -23,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
         stick.classList.add('animate-strike');
         woodenFish.classList.add('animate-scale');
         
+        // 确保声音加载完成
+        tapSound.load();
+        
         // 显示+1动画
         meritPopup.textContent = '+1';
         meritPopup.classList.add('animate-popup');

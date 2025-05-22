@@ -56,17 +56,19 @@ header p {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
 }
 
 #stick {
     position: absolute;
-    width: 60px;
+    width: 80px;
     height: auto;
     transform-origin: bottom;
-    left: 55%;
-    top: 20%;
+    left: 60%;
+    top: 10%;
     transition: transform 0.1s;
     filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.2));
+    transform: rotate(30deg);
 }
 
 #merit-popup {
@@ -141,8 +143,8 @@ footer {
 }
 
 @keyframes strike {
-    0%, 100% { transform: rotate(0deg); }
-    50% { transform: rotate(-30deg); }
+    0%, 100% { transform: rotate(30deg); }
+    50% { transform: rotate(0deg); }
 }
 
 @keyframes scale {
