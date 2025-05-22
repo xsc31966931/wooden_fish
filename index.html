@@ -1,35 +1,37 @@
-<!-- <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>电子木鱼</title>
-    <link rel="stylesheet" href="wooden-fish.css">
-</head>
-<body>
-    <div id="wooden-fish-container">
-        <img id="wooden-fish" src="wooden-fish.png" alt="木鱼">
-        <img id="stick" src="stick.png" alt="木鱼棒">
-    </div>
-    <div id="merit-count">功德: 0</div>
-    <audio id="tap-sound" src="tap-sound.mp3"></audio>
-    <script src="wooden-fish.js"></script>
-</body>
-</html> -->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>电子木鱼</title>
+    <title>电子木鱼 - 积累功德</title>
     <link rel="stylesheet" href="wooden-fish.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <div id="wooden-fish-container">
-        <img id="wooden-fish" src="https://i.imgur.com/JKT8uaS.png" alt="木鱼">
-        <img id="stick" src="https://i.imgur.com/8YZXbPO.png" alt="木鱼棒">
+    <div class="container">
+        <header>
+            <h1>电子木鱼</h1>
+            <p>点击木鱼积累功德</p>
+        </header>
+        
+        <div id="wooden-fish-container">
+            <img id="wooden-fish" src="https://i.imgur.com/JKT8uaS.png" alt="木鱼">
+            <img id="stick" src="https://i.imgur.com/8YZXbPO.png" alt="木鱼棒">
+            <div id="merit-popup">+1</div>
+        </div>
+        
+        <div id="merit-count">功德: <span id="count">0</span></div>
+        
+        <div class="buttons">
+            <button id="reset-btn"><i class="fas fa-redo"></i> 重置功德</button>
+            <button id="save-btn"><i class="fas fa-save"></i> 保存功德</button>
+        </div>
+        
+        <footer>
+            <p>愿您积德行善，心想事成</p>
+        </footer>
     </div>
-    <div id="merit-count">功德: 0</div>
+    
     <audio id="tap-sound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568.wav"></audio>
     <script src="wooden-fish.js"></script>
 </body>
