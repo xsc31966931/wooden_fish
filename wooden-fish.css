@@ -1,0 +1,28 @@
+#wooden-fish-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+#wooden-fish {
+    width: 300px;
+    height: auto;
+}
+
+#stick {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    transform-origin: bottom;
+    left: 55%;
+    top: 30%;
+    transition: transform 0.1s;
+}
+
+#merit-count {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
